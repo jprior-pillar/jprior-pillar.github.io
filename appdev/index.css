@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:thin,extralight,light,regular,medium,bold,bolditalic,italic');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,500,600,700,italic');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Montserrat,Sans-Serif;
+}
+
+.header {
+  padding: 0 5.9%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pillar-logo img {
+  height: 59px;
+  width: 107px;
+  margin: 15px 0;
+  opacity: .6;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: no-wrap;
+  margin-top: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: right;
+  color: #666;
+}
+
+.menu-item {
+  padding: 0;
+  padding-left: 2.4vw;
+}
+
+.menu-item a {
+  color: #666;
+  text-decoration: none;
+}
+
+.body {
+  padding: 0 16% 53px;
+  color: #444;
+  background: #fff;
+  font-size: 16.5px;
+  line-height: 1.5;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.title {
+  text-align: center;
+}
+
+.title h1 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 0.5em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.title h1 {
+  font-family: Montserrat,Arial,Sans-Serif;
+  font-size: 50px;
+  line-height: 54px;
+  color: black;
+  font-weight: 500;
+}
+
+p {
+  font-family: 'EB Garamond', serif;
+  font-size: 20px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.h2 {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.h3 {
+  font-weight: bold;
+}
+
+.link {
+  font-family: 'EB Garamond', serif;
+  line-height: 1em;
+  font-size: 20px;
+  color: #1da8e5;
+  text-decoration: none;
+}
+
+.bottom-link {
+  margin-top: 30px !important;
+  font-family: 'EB Garamond',serif;
+  line-height: 1em;
+  font-size: 18px;
+  font-weight: bold;
+  color: #1da8e5;
+  text-decoration: none;
+}
+
+@media (max-width: 860px) {
+  .title h1 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .outer-ul {
+    padding-inline-start: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding: 0 2%;
+  }
+
+  .body {
+    padding: 0 4% 30px;
+  }
+}
+
+@media (max-width: 518px) {
+  .header {
+    padding: 0 1%;
+    flex-direction: column;
+  }
+
+  .menu {
+    margin-top: 4px;
+    margin-bottom: 24px;
+    font-size: 14px;
+    justify-content: center;
+  }
+
+  .menu .first {
+    padding-left: 0;
+  }
+
+  .body {
+    padding: 0 3% 30px;
+  }
+
+  .title h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
